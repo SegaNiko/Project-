@@ -1,12 +1,9 @@
 # Run project
 
-Jump in project folder 
-
-Install packages: npm install or npm i
-
-Start development: npm start
-
-Then еnjoy
+1.Jump in project folder 
+2.Install packages: npm install or npm i
+3.Start development: npm start
+4.еnjoy
 
 ## Discription
 
