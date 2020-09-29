@@ -1,8 +1,11 @@
 # Run project
 
 Jump in project folder 
+
 Install packages: npm install or npm i
+
 Start development: npm start
+
 Then еnjoy
 
 ## Discription
