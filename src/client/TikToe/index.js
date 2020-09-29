@@ -1,0 +1,1 @@
+export { TikToe } from "./TikToe";
