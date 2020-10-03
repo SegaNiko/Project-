@@ -14,6 +14,7 @@ const TodoList = () => {
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
+    console.log(todos);
   }, [todos]);
   //[todos] В квадратных скобках прописывается зависимость
   //при изменении зависимости вызывается Консоль лог
