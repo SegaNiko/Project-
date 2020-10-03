@@ -18,7 +18,8 @@ const TodoList = () => {
     console.log(todos);
   }, [todos]);
   //[todos] В квадратных скобках прописывается зависимость
-  //при изменении зависимости вызывается Консоль лог
+  //при изменении зависимости вызывается localStorage
+ 
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
