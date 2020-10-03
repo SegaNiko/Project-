@@ -10,6 +10,13 @@ const Navbar = () => {
       label: "Home",
     },
     {
+<<<<<<< HEAD
+=======
+      to: "/about/",
+      label: "About Me",
+    },
+    {
+>>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
       to: "/api/",
       label: "Use API",
     },
@@ -21,10 +28,13 @@ const Navbar = () => {
       to: "/todo/",
       label: "To Do List",
     },
+<<<<<<< HEAD
     {
       to: "/hell",
       label: "Error?",
     },
+=======
+>>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
   ]);
   const linkItem = links.map((item) => {
     return (

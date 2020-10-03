@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# Run project
+
+1.Jump in project folder 
+
+2.Install packages: npm install or npm i
+
+3.Start development: npm start
+
+4.еnjoy
+
+## Discription
+
+This project will demonstrate my programming skills that I acquired during the last year of study.  I will be glad if my work will be useful to someone.  At the end of the project I will talk in more detail about the use of methodology and approaches.
+>>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4

@@ -9,9 +9,12 @@
   &__list {
     display: flex;
   }
+<<<<<<< HEAD
   &__item {
     position: relative;
   }
+=======
+>>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
 
   &__link {
     text-decoration: none;
@@ -26,6 +29,7 @@
     }
 
     &-active {
+<<<<<<< HEAD
       &:after {
         content: "";
         display: inline-block;
@@ -37,6 +41,18 @@
         bottom: 0;
         right: 20%;
         opacity: 0.5;
+=======
+      &:before {
+        content: "";
+        display: inline-block;
+        border-top: 2px solid #333;
+        border-right: 2px solid #333;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+        margin: 0 10px 3px 0;
+>>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
       }
     }
   }
@@ -71,6 +87,7 @@
     transform: rotate(359deg);
   }
 }
+<<<<<<< HEAD
 
 @media (max-width: 900px) {
   .nav {
@@ -82,3 +99,5 @@
     }
   }
 }
+=======
+>>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
