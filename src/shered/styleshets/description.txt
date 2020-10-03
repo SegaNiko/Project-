@@ -1,0 +1,4 @@
+
+
+This folder may contain SCSS files that are connected to components, 
+relative way
