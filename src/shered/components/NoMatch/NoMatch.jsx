@@ -2,8 +2,6 @@ import React from "react";
 
 import "./index.scss";
 
-=======
->>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
 const NoMatch = () => {
   return (
     <div className="container error">

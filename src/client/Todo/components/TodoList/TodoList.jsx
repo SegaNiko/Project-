@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-=======
-import React, { useState } from "react";
->>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
+
 import "./index.scss";
 
 import TodoForm from "../TodoForm/TodoForm";
@@ -9,6 +7,18 @@ import TodoItem from "../TodoItem/TodoItem";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    const raw = localStorage.getItem("todos") || [];
+    setTodos(JSON.parse(raw));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+    console.log(todos);
+  }, [todos]);
+  //[todos] В квадратных скобках прописывается зависимость
+  //при изменении зависимости вызывается Консоль лог
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -44,11 +54,8 @@ const TodoList = () => {
 
   return (
     <div className="todo__list">
-<<<<<<< HEAD
-      <h1 className="todo__title">Whar plans on today?</h1>
-=======
-      <h1 className="dd">Whar plans on today?</h1>
->>>>>>> 0fa94c42c6e4656836b9d6ffffdc6d80313cf7e4
+      <h1 className="todo__title">Plans on today?</h1>
+
       <TodoForm onSubmit={addTodo} />
       <TodoItem
         todos={todos}
