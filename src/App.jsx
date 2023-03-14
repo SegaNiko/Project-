@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import AppRoutes from "../../routes/AppRoutes";
-import CommonLayout from "../../../shered/layouts/CommonLayout/CommonLayout";
+import Router from "./components/Router/Router";
+import CommonLayout from "./layouts/CommonLayout/CommonLayout";
 
 const App = () => {
   return (
     <BrowserRouter>
       <CommonLayout>
-        <AppRoutes />
+        <Router />
       </CommonLayout>
     </BrowserRouter>
   );

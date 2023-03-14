@@ -1,13 +1,13 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 
-import HomePage from "../../client/HomePage/HomePage";
-import Api from "../../client/Api/Api";
-import TikToe from "../../client/TikToe/TikToe";
-import Todo from "../../client/Todo/Todo";
-import NoMatch from "../../shered/components/NoMatch/NoMatch";
+import HomePage from "../../pages/HomePage/HomePage";
+import Api from "../../pages/Api/Api";
+import TikToe from "../../pages/TikToe/TikToe";
+import Todo from "../../pages/Todo/Todo";
+import NoMatch from "../../components/NoMatch/NoMatch";
 
-const AppRoutes = () => {
+const Routes = () => {
   const location = useLocation();
 
   return (
@@ -16,15 +16,15 @@ const AppRoutes = () => {
         <HomePage />
       </Route>
 
-      <Route exact path="/api/">
+      <Route exact path="/api">
         <Api />
       </Route>
 
-      <Route exact path="/tiktoe/">
+      <Route exact path="/tiktoe">
         <TikToe />
       </Route>
 
-      <Route exact path="/todo/">
+      <Route exact path="/todo">
         <Todo />
       </Route>
 
@@ -36,4 +36,4 @@ const AppRoutes = () => {
   );
 };
 
-export default AppRoutes;
+export default Routes;

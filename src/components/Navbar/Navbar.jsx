@@ -10,15 +10,15 @@ const Navbar = () => {
       label: "Home",
     },
     {
-      to: "/api/",
+      to: "/api",
       label: "Use API",
     },
     {
-      to: "/tiktoe/",
+      to: "/tiktoe",
       label: "Tik Toe",
     },
     {
-      to: "/todo/",
+      to: "/todo",
       label: "To Do List",
     },
     {
@@ -26,6 +26,7 @@ const Navbar = () => {
       label: "Error?",
     },
   ]);
+
   const linkItem = links.map((item) => {
     return (
       <li className="nav__item" key={item.label}>

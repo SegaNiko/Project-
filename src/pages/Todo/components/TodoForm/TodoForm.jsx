@@ -25,6 +25,7 @@ const TodoForm = (props) => {
 
     setInput("");
   };
+
   return (
     <form className="todo__form" onSubmit={handleSubmit}>
       <input

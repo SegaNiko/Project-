@@ -1,7 +1,7 @@
 import React from "react";
 
-import Header from "../../../client/common/Header/Header";
-import Footer from "../../../client/common/Footer/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const CommonLayout = ({ children }) => {
   return (

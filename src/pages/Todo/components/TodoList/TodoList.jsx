@@ -9,17 +9,17 @@ const TodoList = () => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    const raw = localStorage.getItem("todos") || [];
+    const raw = localStorage.getItem("todos") || null;
+    if (!raw) {
+      setTodos([]);
+      return
+    }
     setTodos(JSON.parse(raw));
   }, []);
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-    console.log(todos);
   }, [todos]);
-  //[todos] В квадратных скобках прописывается зависимость
-  //при изменении зависимости вызывается localStorage
- 
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -29,8 +29,8 @@ const TodoList = () => {
     const newTodos = [todo, ...todos];
 
     setTodos(newTodos);
-    console.log(...todos);
   };
+
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
@@ -39,10 +39,13 @@ const TodoList = () => {
       prev.map((item) => (item.id === todoId ? newValue : item))
     );
   };
+
   const removeTodo = (id) => {
     const removeArr = [...todos].filter((todo) => todo.id !== id);
+
     setTodos(removeArr);
   };
+
   const completeTodo = (id) => {
     let updateTodos = todos.map((todo) => {
       if (todo.id === id) {
@@ -50,6 +53,7 @@ const TodoList = () => {
       }
       return todo;
     });
+
     setTodos(updateTodos);
   };
 
